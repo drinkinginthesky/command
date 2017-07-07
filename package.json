@@ -9,7 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "iconv": "^2.3.0",
+    "json2csv": "^3.8.0",
     "mongoose": "^4.11.1",
     "shelljs": "^0.7.8"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.1"
   }
 }
