@@ -25,7 +25,7 @@ const csv = json2csv({data: data, fields: fields});
 // 转码
 const buf = iconv.convert(csv);
 
-fs.writeFile('数据.csv', buf, (err) => {
+fs.writeFile('./data/数据.csv', buf, (err) => {
     if (err) throw err;
     console.log('保存成功!');
 });
