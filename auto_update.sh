@@ -12,9 +12,15 @@ expect {
 
 }
 
-send \"cd servergit \r\"
-send \"cd idol \r\"
+send \"cd servergit/idol \r\"
 send \"git pull \r\"
+
+# 判断是否有文件覆盖
+# expect {
+#     \"*/*/*\" {send ls}
+# }
+
 send \"set timeout 50; pm2 restart 0 \r\"
 
 expect eof"
+
