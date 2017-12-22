@@ -27,91 +27,91 @@ def get_birth_day(id):
 """
 def getConstellation(month, day):
     constellation_list = [
-            {
-                "name": "baiyang",
-                "start_month": 3,
-                "start_day": 21,
-                "end_month": 4,
-                "end_day": 19
-            },
-            {
-                "name": "jinniu",
-                "start_month": 4,
-                "start_day": 20,
-                "end_month": 5,
-                "end_day": 20
-            },
-            {
-                "name": "shuangzi",
-                "start_month": 5,
-                "start_day": 21,
-                "end_month": 6,
-                "end_day": 21
-            },
-            {
-                "name": "juxie",
-                "start_month": 6,
-                "start_day": 22,
-                "end_month": 7,
-                "end_day": 22
-            },
-            {
-                "name": "shizi",
-                "start_month": 7,
-                "start_day": 23,
-                "end_month": 8,
-                "end_day": 22
-            },
-            {
-                "name": "chunv",
-                "start_month": 8,
-                "start_day": 23,
-                "end_month": 9,
-                "end_day": 22
-            },
-            {
-                "name": "tiancheng",
-                "start_month": 9,
-                "start_day": 23,
-                "end_month": 10,
-                "end_day": 23
-            },
-            {
-                "name": "tianxie",
-                "start_month": 10,
-                "start_day": 24,
-                "end_month": 11,
-                "end_day": 22
-            },
-            {
-                "name": "sheshou",
-                "start_month": 11,
-                "start_day": 23,
-                "end_month": 12,
-                "end_day": 21
-            },
-            {
-                "name": "mojie",
-                "start_month": 12,
-                "start_day": 22,
-                "end_month": 1,
-                "end_day": 19
-            },
-            {
-                "name": "shuiping",
-                "start_month": 1,
-                "start_day": 20,
-                "end_month": 2,
-                "end_day": 18
-            },
-            {
-                "name": "shuangyu",
-                "start_month": 2,
-                "start_day": 19,
-                "end_month": 3,
-                "end_day": 20
-            }
-        ]
+        {
+            "name": "baiyang",
+            "start_month": 3,
+            "start_day": 21,
+            "end_month": 4,
+            "end_day": 19
+        },
+        {
+            "name": "jinniu",
+            "start_month": 4,
+            "start_day": 20,
+            "end_month": 5,
+            "end_day": 20
+        },
+        {
+            "name": "shuangzi",
+            "start_month": 5,
+            "start_day": 21,
+            "end_month": 6,
+            "end_day": 21
+        },
+        {
+            "name": "juxie",
+            "start_month": 6,
+            "start_day": 22,
+            "end_month": 7,
+            "end_day": 22
+        },
+        {
+            "name": "shizi",
+            "start_month": 7,
+            "start_day": 23,
+            "end_month": 8,
+            "end_day": 22
+        },
+        {
+            "name": "chunv",
+            "start_month": 8,
+            "start_day": 23,
+            "end_month": 9,
+            "end_day": 22
+        },
+        {
+            "name": "tiancheng",
+            "start_month": 9,
+            "start_day": 23,
+            "end_month": 10,
+            "end_day": 23
+        },
+        {
+            "name": "tianxie",
+            "start_month": 10,
+            "start_day": 24,
+            "end_month": 11,
+            "end_day": 22
+        },
+        {
+            "name": "sheshou",
+            "start_month": 11,
+            "start_day": 23,
+            "end_month": 12,
+            "end_day": 21
+        },
+        {
+            "name": "mojie",
+            "start_month": 12,
+            "start_day": 22,
+            "end_month": 1,
+            "end_day": 19
+        },
+        {
+            "name": "shuiping",
+            "start_month": 1,
+            "start_day": 20,
+            "end_month": 2,
+            "end_day": 18
+        },
+        {
+            "name": "shuangyu",
+            "start_month": 2,
+            "start_day": 19,
+            "end_month": 3,
+            "end_day": 20
+        }
+    ]
     for item in constellation_list:
         if month == item['start_month'] and day > item['start_day']:
             return item['name']
